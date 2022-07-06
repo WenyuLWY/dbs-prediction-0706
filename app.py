@@ -8,7 +8,7 @@ def index():
         rates = float(request.form.get("rates"))
         model1 = joblib.load("regression")
         pred1 = model1.predict([[rates]])
-        model2 = joblib.load("decistion_tree")
+        model2 = joblib.load("decision_tree")
         pred2 = model2.predict([[rates]])
         print(pred1)
         print(pred2)
